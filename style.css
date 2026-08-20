@@ -1,0 +1,123 @@
+:root {
+  --green: #147d73;
+  --dark: #172321;
+  --light: #f3f7f5;
+  --gray: #66736f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--dark);
+  background: #ffffff;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  line-height: 1.8;
+}
+
+header {
+  min-height: 70vh;
+  padding: 32px 8vw 80px;
+  background: var(--light);
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+}
+
+nav a,
+a {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  max-width: 850px;
+  margin: 18vh auto 0;
+}
+
+.eyebrow,
+.tag {
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: clamp(4rem, 12vw, 9rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+h2 {
+  margin-bottom: 28px;
+  font-size: 2.4rem;
+}
+
+h3 {
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+
+.lead {
+  max-width: 650px;
+  color: var(--gray);
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+.research-card {
+  margin: 28px 0;
+  padding: 28px;
+  border-left: 4px solid var(--green);
+  background: var(--light);
+}
+
+li {
+  margin: 10px 0;
+}
+
+footer {
+  padding: 30px;
+  color: var(--gray);
+  text-align: center;
+  border-top: 1px solid #e0e8e4;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 24px 7vw 60px;
+  }
+
+  nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+
+  .hero {
+    margin-top: 15vh;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+}
